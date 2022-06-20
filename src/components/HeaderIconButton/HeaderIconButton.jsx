@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./Header.module.scss";
+import styles from "./HeaderIconButton.module.scss";
 
-export function HeaderMenuButton() {
+export function HeaderIconButton() {
   return (
     <div className={styles.root}>
       <img className={styles.icon} src="/icons/hamburger.png" alt="Menu" />

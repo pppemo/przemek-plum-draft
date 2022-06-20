@@ -1,5 +1,17 @@
 .root {
     border-bottom: 1px solid lightgray;
     height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    .plumLogo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        img {
+            height: 36px;
+        }
+    }
 }

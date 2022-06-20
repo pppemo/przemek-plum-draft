@@ -1,11 +1,14 @@
 import React from "react";
-import { HeaderMenuButton } from "../HeaderMenuButton/HeaderMenuButton";
+import { HeaderIconButton } from "../HeaderIconButton/HeaderIconButton";
 import styles from "./Header.module.scss";
 
 export function Header() {
   return (
     <div className={styles.root}>
-      <HeaderMenuButton />
+      <HeaderIconButton />
+      <div className={styles.plumLogo}>
+        <img src="/plum-logo.svg" alt="Plum Guide" />
+      </div>
     </div>
   );
 }
