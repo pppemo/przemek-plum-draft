@@ -28,6 +28,23 @@ function App() {
           "Private terrace",
           "Peaceful",
         ]}
+        details={[
+          {
+            id: 1,
+            iconUrl: "/icons/map-pin.svg",
+            value: "Notthing Hill, London",
+          },
+          {
+            id: 2,
+            iconUrl: "/icons/train.svg",
+            value: "Walk 6 mins (Westbourne Park Station)",
+          },
+          {
+            id: 3,
+            iconUrl: "/icons/stairs.svg",
+            value: "Stairs",
+          },
+        ]}
       />
     </div>
   );
