@@ -1,24 +1,22 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { getImagesList } from "./api/gateway";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [imagesUrls, setImagesUrls] = useState([]);
+  const [imageUrls, setImageUrls] = useState([]);
 
   useEffect(() => {
-    async function getAndStoreImagesList() {
+    async function getImagesUrlsAndStore() {
       const imagesList = await getImagesList();
       const { imageUrls } = imagesList?.data;
-      setImagesUrls(imageUrls);
+      setImageUrls(imageUrls);
     }
-    getAndStoreImagesList();
+    getImagesUrlsAndStore();
   }, []);
 
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
