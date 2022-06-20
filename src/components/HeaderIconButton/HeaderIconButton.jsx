@@ -1,9 +1,7 @@
 import styles from "./HeaderIconButton.module.scss";
 
-export function HeaderIconButton() {
-  return (
-    <div className={styles.root}>
-      <img className={styles.icon} src="/icons/hamburger.png" alt="Menu" />
-    </div>
-  );
-}
+export const HeaderIconButton = ({ iconUrl, alt }) => (
+  <div className={styles.root}>
+    <img className={styles.icon} src={iconUrl} alt={alt} />
+  </div>
+);

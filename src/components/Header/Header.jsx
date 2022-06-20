@@ -1,11 +1,14 @@
 import { HeaderIconButton } from "../HeaderIconButton/HeaderIconButton";
 import { HeaderChoiceButton } from "../HeaderChoiceButton/HeaderChoiceButton";
+import { Separable } from "../Separable/Separable";
 import styles from "./Header.module.scss";
 
 export function Header() {
   return (
     <div className={styles.root}>
-      <HeaderIconButton />
+      <Separable rightSeparator>
+        <HeaderIconButton iconUrl="/icons/menu-burger.svg" alt="Menu" />
+      </Separable>
       <div className={styles.buttons}>
         <HeaderChoiceButton active selectable>
           HOMES
@@ -19,6 +22,9 @@ export function Header() {
         <HeaderChoiceButton>Need help?</HeaderChoiceButton>
         <HeaderChoiceButton>Login</HeaderChoiceButton>
       </div>
+      <Separable leftSeparator>
+        <HeaderIconButton iconUrl="/icons/user.svg" alt="Account" />
+      </Separable>
     </div>
   );
 }
