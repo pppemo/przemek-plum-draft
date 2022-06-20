@@ -1,0 +1,22 @@
+.root {
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 64px;
+
+    .name {
+        font-family: "Lobster";
+        font-size: 5rem;
+    }
+
+    .amenities {
+        font-family: "Montserrat";
+        display: flex;
+        font-size: 0.9rem;
+
+        & span {
+            margin: 0 10px;
+        }
+    }
+}
