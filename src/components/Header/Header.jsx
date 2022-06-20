@@ -7,11 +7,17 @@ export function Header() {
     <div className={styles.root}>
       <HeaderIconButton />
       <div className={styles.buttons}>
-        <HeaderChoiceButton active>Homes</HeaderChoiceButton>
-        <HeaderChoiceButton>Hosts</HeaderChoiceButton>
+        <HeaderChoiceButton active selectable>
+          HOMES
+        </HeaderChoiceButton>
+        <HeaderChoiceButton selectable>HOSTS</HeaderChoiceButton>
       </div>
       <div className={styles.plumLogo}>
         <img src="/plum-logo.svg" alt="Plum Guide" />
+      </div>
+      <div className={styles.buttons}>
+        <HeaderChoiceButton>Need help?</HeaderChoiceButton>
+        <HeaderChoiceButton>Login</HeaderChoiceButton>
       </div>
     </div>
   );
