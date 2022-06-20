@@ -1,0 +1,18 @@
+.root {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 0 20px;
+    margin: 0 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-bottom: 2px solid transparent;
+
+    &.active, &:hover {
+        border-bottom: 2px solid orange;
+    }
+}

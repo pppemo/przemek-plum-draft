@@ -6,12 +6,16 @@
     align-items: center;
 
     .plumLogo {
-        width: 100%;
         display: flex;
         justify-content: center;
-        
+
         img {
             height: 36px;
         }
+    }
+
+    .buttons {
+        height: 100%;
+        display: flex;
     }
 }

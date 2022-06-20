@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./HeaderIconButton.module.scss";
 
 export function HeaderIconButton() {
