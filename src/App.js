@@ -1,6 +1,7 @@
 import { getImagesList } from "./api/gateway";
 import { useEffect, useState } from "react";
 import { Header } from "./components/Header/Header";
+import { BookingContainer } from "./components/BookingContainer/BookingContainer";
 import { PropertyView } from "./components/PropertyView/PropertyView";
 import styles from "./App.module.scss";
 
@@ -19,7 +20,7 @@ function App() {
   return (
     <div className={styles.root}>
       <Header />
-
+      <BookingContainer />
       <PropertyView
         name="Monsieur Didot"
         amenities={[

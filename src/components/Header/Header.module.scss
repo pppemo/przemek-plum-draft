@@ -3,11 +3,12 @@
     height: 70px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 
     .plumLogo {
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-grow: 1;
 
         img {

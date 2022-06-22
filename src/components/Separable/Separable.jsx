@@ -1,6 +1,6 @@
 import styles from "./Separable.module.scss";
 
-const Separator = () => <span className={styles.separator} />;
+const Separator = () => <div className={styles.separator} />;
 
 export const Separable = ({
   children,
