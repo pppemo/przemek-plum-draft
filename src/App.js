@@ -19,6 +19,7 @@ function App() {
   return (
     <div className={styles.root}>
       <Header />
+
       <PropertyView
         name="Monsieur Didot"
         amenities={[
