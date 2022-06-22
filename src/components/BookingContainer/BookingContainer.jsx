@@ -1,3 +1,4 @@
+import { Button } from "./../Button/Button";
 import { BookingOption } from "./../BookingOption/BookingOption";
 import { Separable } from "../Separable/Separable";
 import styles from "./BookingContainer.module.scss";
@@ -14,5 +15,6 @@ export const BookingContainer = () => (
       <BookingOption label="£ Per night" value="345" />
       <BookingOption label="£ Total for 54 nights" value="18,630" />
     </Separable>
+    <Button>INSTANT BOOKING</Button>
   </div>
 );
