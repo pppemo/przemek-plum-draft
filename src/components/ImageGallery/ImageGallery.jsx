@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import ReactImageGallery from "react-image-gallery";
 import { useMedia } from "./../../hooks/useMedia";
+import MoonLoader from "react-spinners/MoonLoader";
 import styles from "./ImageGallery.module.scss";
 
 export const ImageGallery = ({ imageUrls }) => {
@@ -15,7 +16,11 @@ export const ImageGallery = ({ imageUrls }) => {
   }));
   const numberOfItems = galleryItems.length;
 
-  return (
+  return imageUrls?.length === 0 ? (
+    <div className={styles.spinnerRoot}>
+      <MoonLoader />
+    </div>
+  ) : (
     <div className={styles.root}>
       <ReactImageGallery
         ref={galleryRef}
