@@ -1,70 +1,26 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Running the app
+1.  `yarn`
+2.  `yarn start`
+3. Go to [http://localhost:3000](http://localhost:3000)
 
-## Available Scripts
+# Please note, before reviewing
+* This code is supposed to be as awesome as possible, but still - it's not a production code, and I'm very much aware of this. Below I've listed things I'd do more/differently.
+* The design is not pixel perfect, I took a liberty and assumed some dimensions instead of measuring them perfectly. I understand this is ok, due to the nature of this exercise.
+* I've used CSS modules and SASS for styling.
+* For carousel I've decided to use an existing library `react-image-gallery`. It made very much sense to me to use an existing lib, even in this kind of exercise. As much as this doesn't show you, how I'd approach implementing this kind of carousel, I believe this showcases how I get and adapt an existing lib to my needs and requirements :-)
+* The carousel uses lazy loading to improve performance and not download images that are only about to be shown.
+* Try run the app with network throttling. I've added a spinner to be shown before images URLs get retrieved from API.
+* Depending on the viewport, images are scaled accordingly using Imgix.
+* I assumed it's ok to have only one viewport breakpoint. Obviously there'd be more.
 
-In the project directory, you can run:
+# Wishlist
+### Meaning, what I'd expect from this code, before this gets promoted to production
+1. Tests - obviously
+2. TypeScript: typing components
+3. Pixel perfectness. Deeper insight into dimensions and measurements
+4. Accessibility. Better than just providing `alt`s. I'd ideally allow navigating with keyboard, e.g. among top dropdowns. In this implementation they weren't really true dropdowns.
+5. Better organisation of components in directories. It's just because now it's only one-pager app. Normally there would be more views.
+6. Use memoisation for methods that deserve it, in order to improve performance.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy reviewing! :-)
