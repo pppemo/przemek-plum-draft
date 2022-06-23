@@ -1,4 +1,4 @@
-.gallery {
+.root {
     width: 70%;
     position: relative;
 
@@ -68,6 +68,26 @@
         & img {
             max-width: 100%;
             max-height: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .root {
+        width: 100%;
+
+        .counter {
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 0.6rem;
         }
     }
 }

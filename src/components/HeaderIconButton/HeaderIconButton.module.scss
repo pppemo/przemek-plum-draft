@@ -9,3 +9,9 @@
         cursor: pointer;
     }
 }
+
+@media screen and (max-width: 780px) {
+    .root {
+        width: 60px;
+    }
+}

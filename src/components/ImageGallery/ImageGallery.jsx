@@ -14,7 +14,7 @@ export const ImageGallery = ({ imageUrls }) => {
   const numberOfItems = galleryItems.length;
 
   return (
-    <div className={styles.gallery}>
+    <div className={styles.root}>
       <ReactImageGallery
         ref={galleryRef}
         items={galleryItems}

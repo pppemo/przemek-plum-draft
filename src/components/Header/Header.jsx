@@ -21,8 +21,10 @@ export const Header = () => (
       <HeaderChoiceButton>Need help?</HeaderChoiceButton>
       <HeaderChoiceButton>Login</HeaderChoiceButton>
     </div>
-    <Separable leftSeparator>
-      <HeaderIconButton iconUrl="/icons/user.svg" alt="Account" />
-    </Separable>
+    <div className={styles.accountButton}>
+      <Separable leftSeparator>
+        <HeaderIconButton iconUrl="/icons/user.svg" alt="Account" />
+      </Separable>
+    </div>
   </div>
 );

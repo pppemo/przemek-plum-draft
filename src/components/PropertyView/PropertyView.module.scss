@@ -19,6 +19,27 @@
 
         & span {
             margin: 0 10px;
+            white-space: nowrap;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .root {
+        padding: 32px;
+        
+        .name {
+            font-size: 3rem;
+        }
+
+        .amenities {
+            width: 90%;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            & span {
+                margin-bottom: 10px;
+            }
         }
     }
 }

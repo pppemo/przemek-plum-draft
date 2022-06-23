@@ -21,3 +21,17 @@
         display: flex;
     }
 }
+
+@media screen and (max-width: 780px) {
+    .root {
+        height: 60px;
+
+        .buttons {
+            display: none;
+        }
+
+        .accountButton {
+            display: none;
+        }
+    }
+}
