@@ -1,8 +1,10 @@
 import { useRef, useState } from "react";
 import ReactImageGallery from "react-image-gallery";
+import { useMedia } from "./../../hooks/useMedia";
 import styles from "./ImageGallery.module.scss";
 
 export const ImageGallery = ({ imageUrls }) => {
+  const { isDesktop } = useMedia();
   const [galleryIndex, setGalleryIndex] = useState(1);
   const galleryRef = useRef(null);
 
@@ -21,6 +23,7 @@ export const ImageGallery = ({ imageUrls }) => {
         lazyLoad
         autoPlay={false}
         showThumbnails={false}
+        showNav={isDesktop}
         showFullscreenButton={false}
         showPlayButton={false}
         onBeforeSlide={(index) => setGalleryIndex(index + 1)}
