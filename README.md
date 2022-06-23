@@ -13,6 +13,7 @@
 * Try run the app with network throttling. I've added a spinner to be shown before images URLs get retrieved from API.
 * Depending on the viewport, images are scaled accordingly using Imgix.
 * I assumed it's ok to have only one viewport breakpoint. Obviously there'd be more.
+* If there's any doubt or hesitation regarding why I went a specific path or choose a given solution - don't hesitate to reach out to me, so that I can elaborate more.
 
 # Wishlist
 ### Meaning, what I'd expect from this code, before this gets promoted to production
