@@ -22,6 +22,7 @@ function App() {
       <Header />
       <BookingContainer />
       <PropertyView
+        imageUrls={imageUrls}
         name="Monsieur Didot"
         amenities={[
           "4 people",
