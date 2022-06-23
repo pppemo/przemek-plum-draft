@@ -1,0 +1,33 @@
+.root {
+    flex-grow: 1;
+    padding: 8px 0;
+    display: flex;
+
+    &.expandable {
+        cursor: pointer;
+    }
+
+    .dataContainer {
+        flex-grow: 1;
+        padding-left: 40px;
+
+        .label {
+            font-size: 0.9rem;
+            color: gray;
+        }
+
+        .value {
+            font-weight: 600;
+        }
+    }
+
+    .expandContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        img {
+            width: 10px;
+        }
+    }
+}

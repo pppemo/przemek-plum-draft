@@ -1,0 +1,40 @@
+.root {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    margin-top: 12px;
+    margin-bottom: 30px;
+    padding: 6px 0;
+    display: flex;
+
+    .detail {
+        display: flex;
+        align-items: center;
+        font-family: "Montserrat";
+        font-size: 0.9rem;
+        padding: 8px 18px;
+        height: 100%;
+
+        &:not(:last-child) {
+            border-right: 1px solid lightgray;
+        }
+
+        img {
+            width: 24px;
+            height: 24px;
+            margin-right: 6px;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .root {
+        flex-direction: column;
+        width: 90%;
+
+        .detail {
+            &:not(:last-child) {
+                border: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.root {
+    border-bottom: 1px solid lightgray;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    .plumLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+
+        img {
+            height: 24px;
+        }
+    }
+
+    .buttons {
+        height: 100%;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .root {
+        height: 60px;
+
+        .buttons {
+            display: none;
+        }
+
+        .accountButton {
+            display: none;
+        }
+    }
+}
